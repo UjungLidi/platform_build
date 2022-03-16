@@ -318,7 +318,7 @@ FIND_LEAVES_EXCLUDES := $(addprefix --prune=, $(SCAN_EXCLUDE_DIRS) .repo .git)
 
 -include vendor/extra/BoardConfigExtra.mk
 ifneq ($(ASTRAL_BUILD),)
-include vendor/astral/config/BoardConfigLineage.mk
+include vendor/astral/config/BoardConfigAstral.mk
 endif
 
 # The build system exposes several variables for where to find the kernel
